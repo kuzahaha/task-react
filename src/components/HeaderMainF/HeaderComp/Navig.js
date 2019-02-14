@@ -7,7 +7,7 @@ function Navig(props){
     return(
       <nav id="navig" style={{marginLeft :' -175px'}}>  
         <ul className="header-nav">
-           <Articles setValue={props.setValue}/>
+           <Articles setValue={props.setValue} isOpenBurger={props.isOpenBurger}/>
         </ul>
       </nav> 
     )
@@ -15,7 +15,7 @@ function Navig(props){
    return(
       <nav id="navig" style={{marginLeft :' 0px'}}>  
       <ul className="header-nav">
-         <Articles setValue={props.setValue}/>
+         <Articles setValue={props.setValue} isOpenBurger={props.isOpenBurger} />
       </ul>
     </nav> 
    ) 

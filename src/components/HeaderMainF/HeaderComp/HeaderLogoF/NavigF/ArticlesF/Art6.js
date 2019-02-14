@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchFull1 from './SearchF/SearchFull1'
+import SearchFull1 from './SearchF/SearchFull1';
 
 class Art6 extends React.Component{
 constructor(props) {
@@ -19,9 +19,9 @@ render(){
     return(
         <div>
             <SearchFull1 setValue={this.props.setValue} handler={this.handleClick} isOpen={this.state.isOpen} />
-    
         </div>
     )}
 
     }
-export default Art6
+
+export default Art6;

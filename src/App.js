@@ -13,8 +13,8 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        <HeaderGlobal setValue={this.setValue}/>
-        <Section value={this.state.value}/>
+          <HeaderGlobal setValue={this.setValue}/>
+          <Section value={this.state.value}/>
       </div>
     )
   }

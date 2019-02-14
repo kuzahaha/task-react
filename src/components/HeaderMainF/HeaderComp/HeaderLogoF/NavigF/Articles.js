@@ -1,15 +1,32 @@
 import React from 'react';
-import Art2 from './ArticlesF/Art2';
-import Art3 from './ArticlesF/Art3';
-import Art4 from './ArticlesF/Art4';
-import Art5 from './ArticlesF/Art5';
+import Art1 from './ArticlesF/Art1';
 import Art6 from './ArticlesF/Art6';
 
-function ListItems(props){
-    const numbers=[<li><Art2/></li>,<li><Art2/></li>,<li><Art3/></li>,<li><Art4/></li>,<li><Art5/></li>,<li id="s1"><Art6 setValue={props.setValue}/></li>]
-    return(
+
+function Articles(props){
+  const numbers2=[
+  <li><Art1 setValue={props.setValue} /></li>,
+  <li><p>projects</p></li>,
+  <li><p>guides</p></li>,
+  <li><p>blog</p></li>,
+  <li><p>training&certification</p></li>,
+  <li id="s1"><Art6 setValue={props.setValue} isOpenBurger={props.isOpenBurger}/></li>
+]
+  const numbers=[
+    <li><p>projects</p></li>,
+    <li><p>guides</p></li>,
+    <li><p>blog</p></li>,
+    <li><p>training&certification</p></li>,
+    <li id="s1"><Art6 setValue={props.setValue} isOpenBurger={props.isOpenBurger}/></li>
+  ]
+  if(props.isOpenBurger===false)  {
+  return(
       numbers
-    )
+    )}else {
+      return(
+      numbers2
+      )
+    }
 }
-export default ListItems;
+export default Articles;
 
